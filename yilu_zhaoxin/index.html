@@ -3,91 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>周 | Yilu 招新作品集</title>
+    <title>周 | Yilu Studio 招新作品集</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: "Microsoft YaHei", system-ui, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #333;
-            line-height: 1.6;
             min-height: 100vh;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
             padding: 40px 20px;
+            color: #333;
         }
+        .container { max-width: 1100px; margin: 0 auto; }
         header {
             text-align: center;
             color: white;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 1.3rem;
-            opacity: 0.9;
-        }
+        h1 { font-size: 3.2rem; margin-bottom: 10px; }
+        .subtitle { font-size: 1.5rem; opacity: 0.9; }
         .projects {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 25px;
         }
         .card {
             background: white;
             border-radius: 16px;
-            overflow: hidden;
+            padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-            transition: all 0.3s ease;
+            transition: all 0.3s;
         }
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0,0,0,0.2);
         }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-content {
-            padding: 25px;
-        }
-        .card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 12px;
-            color: #4a4a4a;
-        }
-        .card p {
-            color: #666;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
+        .card h3 { font-size: 1.6rem; margin-bottom: 15px; }
+        .card p { color: #666; margin-bottom: 20px; line-height: 1.5; }
         .btn {
             display: inline-block;
-            padding: 12px 24px;
+            padding: 12px 28px;
             background: #667eea;
             color: white;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            transition: 0.3s;
         }
-        .btn:hover {
-            background: #5a6fd8;
-            transform: scale(1.05);
-        }
+        .btn:hover { background: #5a67d8; }
         footer {
             text-align: center;
-            margin-top: 60px;
+            margin-top: 80px;
             color: rgba(255,255,255,0.8);
-            font-size: 0.95rem;
         }
     </style>
 </head>
@@ -96,50 +61,34 @@
         <header>
             <h1>周</h1>
             <p class="subtitle">Yilu Studio 招新作品集</p>
-            <p style="margin-top: 15px; opacity: 0.85;">HTML + CSS + JavaScript 前端练习项目</p>
+            <p>HTML + CSS + JavaScript 前端练习项目</p>
         </header>
 
         <div class="projects">
-            <!-- 项目1 -->
             <div class="card">
-                <div class="card-content">
-                    <h3>1. 个人介绍页面</h3>
-                    <p>使用语义化标签、图片、列表、表格，包含自我介绍、技能展示与联系方式。</p>
-                    <a href="personal-intro/" class="btn">在线查看 →</a>
-                </div>
+                <h3>① 个人介绍页面</h3>
+                <p>语义化 HTML + CSS 美化 + 自我介绍</p>
+                <a href="yilu_zhaoxin/personal-intro/" class="btn">立即查看 →</a>
             </div>
-
-            <!-- 项目2 -->
             <div class="card">
-                <div class="card-content">
-                    <h3>2. 课表多选 + 轮播图</h3>
-                    <p>JavaScript 基础练习：全选/反选、轮播图自动切换。</p>
-                    <a href="course-table/" class="btn">在线查看 →</a>
-                </div>
+                <h3>② 课表多选 + 轮播图</h3>
+                <p>JavaScript 基础：全选/反选、自动轮播</p>
+                <a href="yilu_zhaoxin/course-table/" class="btn">立即查看 →</a>
             </div>
-
-            <!-- 项目3 -->
             <div class="card">
-                <div class="card-content">
-                    <h3>3. 代办事项管理器</h3>
-                    <p>Todo List：添加、删除、清空功能，使用数组管理数据。</p>
-                    <a href="todo-list/" class="btn">在线查看 →</a>
-                </div>
+                <h3>③ 代办事项管理器</h3>
+                <p>添加、删除、清空 Todo List 功能</p>
+                <a href="yilu_zhaoxin/todo-list/" class="btn">立即查看 →</a>
             </div>
-
-            <!-- 项目4 -->
             <div class="card">
-                <div class="card-content">
-                    <h3>4. 纪念日计时器</h3>
-                    <p>浪漫倒计时 / 正计时，支持日期选择与 CSS 动画。</p>
-                    <a href="timer/" class="btn">在线查看 →</a>
-                </div>
+                <h3>④ 纪念日计时器</h3>
+                <p>浪漫倒计时 / 正计时 + CSS 动画</p>
+                <a href="yilu_zhaoxin/timer/" class="btn">立即查看 →</a>
             </div>
         </div>
 
         <footer>
-            <p>感谢 Yilu Studio 提供这次挑战机会 | 2026</p>
-            <p>仓库地址：<a href="https://github.com/zz5176994-debug/yilu-zhaoxin" style="color: white; text-decoration: underline;">GitHub</a></p>
+            <p>感谢 Yilu Studio 招新挑战机会 | 2026</p>
         </footer>
     </div>
 </body>
