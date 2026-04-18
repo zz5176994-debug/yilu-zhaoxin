@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./index.css">
+  
+  <title>Let's Study</title>
+</head>
+<body>
+  <!-- 轮播图 -->
+  <div class="slider">
+    <div class="slider-wrapper">
+      <img src="./images/slider01.jpg" alt="微积分" />
+    </div>
+
+    <div class="slider-footer">
+      <ul>
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    
+        
+    </div>
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+  </div>
+
+  <!-- 课表 -->
+  <!-- 控制是否显示按钮 -->
+  <div class="tableContainer">
+   <button class="control">显示/隐藏课表</button>
+   <div class="courseTable">
+        <h2>课表</h2>
+        <div class="course-item">
+            <input type="checkbox" id="calc" value="微积分">
+            <label for="calc">微积分</label>
+        </div>
+        <div class="course-item">
+            <input type="checkbox" id="linear" value="线性代数" checked>
+            <label for="linear">线性代数</label>
+        </div>
+        <div class="course-item">
+            <input type="checkbox" id="physics" value="物理">
+            <label for="physics">物理</label>
+        </div>
+        <div class="course-item">
+            <input type="checkbox" id="program" value="程序设计" checked>
+            <label for="program">程序设计</label>
+        </div>
+
+        <div class="btn-group">
+            <button class="selectAll">全选</button>
+            <button class="selectNone">全不选</button>
+            <button class="reverseSelect">反选</button>
+        </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

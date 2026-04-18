@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+body {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+}
+h2 {
+  text-align: center;
+  color: #325d40;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.inputBox {
+  display: flex;
+  margin-bottom: 20px;
+  border: #46ad93 solid 2px;
+  border-radius: 6px;
+}
+.inputBox input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  /* border-radius: 4px 0 0 4px; */
+  font-size: 16px;
+}
+.inputBox button {
+  padding: 12px 20px;
+  color: #fff;
+  border: none;
+  /* border-radius: 0 4px 4px 0; */
+  cursor: pointer;
+  font-size: 16px;
+  background-image: linear-gradient(
+    to right,
+    /* rgba(255, 255, 255, 0.2), */
+    #71b1a1,
+    #46ad93
+  );
+}
+.inputBox button:hover {
+  background-image: linear-gradient(
+    to right,
+    #4aa991,
+    #3c8271
+  )
+}
+.taskBox {
+  margin-top: 10px;
+}
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+.taskItem span {
+  font-size: 16px;
+}
+.taskItem button {
+  color: #c85050;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.taskFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+}
+.clearBtn {
+  color: #666;
+  background: none;
+  border: none;
+  cursor: pointer;
+}

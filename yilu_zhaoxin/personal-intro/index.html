@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人介绍</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+    <!-- 头部：标题、头像 -->
+    <header class="card header-card">
+        <h1>个人介绍</h1>
+        <figure>
+            <img class="avatar" src="./images/header.jpg" alt="我的个人头像">
+            <figcaption>kv</figcaption>
+        </figure>
+    </header>
+
+    <!-- 主体内容 -->
+    <main>
+        <!-- 基本信息 -->
+        <section class="card">
+            <h2>基本信息</h2>
+            <p><strong>姓名：</strong>周雨欣</p>
+            <p><strong>年龄：</strong>19岁</p>
+            <p><strong>方向：</strong>前端</p>
+        </section>
+
+        <!-- 自我介绍 -->
+        <section class="card">
+            <h2>自我介绍</h2>
+            <p>我是一个积极向上，具有团队意识的人。目前正在系统学习HTML、CSS、JavaScript。我乐于学习新知识，也喜欢和大家交流技术~</p>
+        </section>
+
+        <!-- 技能 -->
+        <section class="card">
+            <h2>我的技能</h2>
+            <ul>
+                <li>HTML 语义化标签</li>
+                <li>CSS 基础样式</li>
+                <li>JavaScript 基础语法</li>
+                <li>用markdown记笔记</li>
+            </ul>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="card">
+            <h2>联系方式</h2>
+            <table>
+                <tr>
+                    <th>联系方式</th>
+                    <th>详情</th>
+                </tr>
+                <tr>
+                    <td>邮箱</td>
+                    <td>3794053537@qq.com</td>
+                </tr>
+                <tr>
+                    <td>GitHub</td>
+                    <td><a href="https://github.com/zz5176994-debug?tab=repositories" target="_blank">点击访问我的GitHub</a></td>
+                </tr>
+                <tr>
+                    <td>电话</td>
+                    <td>19834732711</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- 折叠详情 -->
+        <section class="card">
+            <h2>更多关于我</h2>
+            <details>
+                <summary>点击查看我的学习经历</summary>
+                <p>在老师的推荐下学会用markdown记笔记</p>
+                <p>系统学习了C语言</p>
+                <p>2025年开始系统学习前端开发，完成了多个HTML+CSS实战项目，正在学习JavaScript交互效果。</p>
+                <h4>我的pblf作品：</h4>
+                <img src="./images/pblf (1).jpg" alt="我的前端项目截图1">
+                <img src="./images/pblf (2).jpg" alt="我的前端项目截图2">
+                </details>
+        </section>
+
+        <!-- 音频元素 -->
+        <section class="card">
+            <h2>我最爱的音乐</h2>
+            <audio controls>
+                <source src="./Don't Waste My Time-NOA.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+          <!-- 表单 -->
+        <section class="card">
+        <h2>我的招新登记表</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" value="周雨欣" readonly>
+            </div>    
+
+            <div class="form-group">
+                <label for="class">班级：</label>
+                <input type="text" id="class" value="1204" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="skill">掌握技能：</label>
+                <input type="text" id="skill" value="HTML / CSS 基础" readonly0>
+            </div>
+
+            <div class="form-group"> 
+                <label for="want">应聘方向：</label>
+                <select id="want" disabled>
+                    <option selected>前端</option>
+                </select>
+            </div>
+
+            <div class="form-group"> 
+                <label for="intro">自我简介：</label>
+                <textarea id="intro" rows="5" readonly>
+                    我是一名刚学习前端的新人，对网页制作非常感兴趣，
+                    希望能加入工作室学习更多知识，我会认真努力、积极上进！
+                </textarea>
+            </div>
+    </form>
+</section>
+    </main>
+    </div>
+
+    <!-- 语义化底部 -->
+    <footer>
+        <p>&copy; 2026 我的个人介绍页面 | 前端个人介绍项目</p>
+    </footer>
+</body>
+</html>
